@@ -26,3 +26,4 @@ server {
 ```
 On local port 3000, it runs the node.js server.
 
+The server script first has a list of request urls with either a static response or a function that will generate the response. The static responses are for the startup (authentication sequence that is ignored) and the start page. For the generated responses, the script analyses the pages of the vtuner.com web site and returns the inner groups with list of stations, or a redirect to the stream url.
